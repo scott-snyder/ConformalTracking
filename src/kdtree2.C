@@ -84,16 +84,16 @@ namespace kdtree2 {
       // if we have a rearranged tree.
       // allocate the memory for it.
       //printf("rearranging\n");
-      rearranged_data.resize(boost::extents[N][dim]);
+      rearranged_data.emplace(boost::extents[N][dim]);
 
       // permute the data for it.
       for (int i = 0; i < N; i++) {
         for (int j = 0; j < dim; j++) {
-          rearranged_data[i][j] = the_data[ind[i]][j];
+          (*rearranged_data)[i][j] = the_data[ind[i]][j];
           // wouldn't F90 be nice here?
         }
       }
-      data = &rearranged_data;
+      data = &rearranged_data.value();
     } else {
       data = &the_data;
     }
