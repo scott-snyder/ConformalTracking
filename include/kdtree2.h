@@ -16,6 +16,7 @@
 #include <stdio.h>  // bug noticed when compiling on Fedora 14, could not find printf
 #include <algorithm>
 #include <vector>
+#include <optional>
 
 #include <boost/array.hpp>
 #include <boost/multi_array.hpp>
@@ -150,7 +151,7 @@ namespace kdtree2 {
     // the index for the tree leaves.  Data in a leaf with bounds [l,u] are
     // in  'the_data[ind[l],*] to the_data[ind[u],*]
 
-    KDTreeArray rearranged_data{};
+    std::optional<KDTreeArray> rearranged_data;
     // if rearrange is true then this is the rearranged data storage.
 
     static const int bucketsize = 12;  // global constant.
