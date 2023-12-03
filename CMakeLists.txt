@@ -60,8 +60,9 @@ ENDIF()
 INCLUDE_DIRECTORIES( ./include )
 #INSTALL_DIRECTORY( ./include DESTINATION . FILES_MATCHING PATTERN "*.h" )
 
-# Prevent O3 flag from being overwritten by something exporting O2 or worse
-ADD_DEFINITIONS(" -O3 ")
+# Use -O3 in optimized builds.
+string(APPEND CMAKE_CXX_FLAGS_RELWITHDEBINFO " -O3 ")
+string(APPEND CMAKE_CXX_FLAGS_RELEASE " -O3 ")
 
 # add library
 AUX_SOURCE_DIRECTORY( ./src library_sources )
