@@ -1,0 +1,6 @@
+Bottom: 7dc9a683d3d4c39df41a2bed50f9be73c703d1c2
+Top:    7dc9a683d3d4c39df41a2bed50f9be73c703d1c2
+Author: scott snyder <snyder@bnl.gov>
+Date:   2023-12-03 18:57:14 -0500
+
+Don't use -O3 in debug builds!
