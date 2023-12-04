@@ -1,11 +1,10 @@
 {
   "version": 5,
-  "prev": "cf16c1a15ecbc76122d76844c7aefdd0585e75cd",
-  "head": "d929c795442d3677ae3872aa362ba778ffd0d7c9",
+  "prev": "6fcfb3718f6158a84d7c64379e379835ef985600",
+  "head": "0d3b2ffe962ccdfb09b7b9c408b55754da650bef",
   "applied": [
     "opt",
-    "gitignore",
-    "refresh-temp"
+    "gitignore"
   ],
   "unapplied": [
     "typo",
@@ -17,10 +16,7 @@
       "oid": "cbfb7356cdfd0cf2e21b5dc06c859d5054be0173"
     },
     "gitignore": {
-      "oid": "8bc963b44a53c4c844e9580ca1f7ff6c00604ebf"
-    },
-    "refresh-temp": {
-      "oid": "d929c795442d3677ae3872aa362ba778ffd0d7c9"
+      "oid": "0d3b2ffe962ccdfb09b7b9c408b55754da650bef"
     },
     "typo": {
       "oid": "d93970a226e43910201cbf7ac864dbef20703dc4"
