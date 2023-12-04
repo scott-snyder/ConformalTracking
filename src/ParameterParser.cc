@@ -19,7 +19,7 @@ struct ParameterGrammar : qi::grammar<It, ParameterParser::PPVec(), Skipper> {
     // name is a sequence of characters/numbers/underscore and hyphen
     name = +qi::char_("-a-zA-Z_0-9");
 
-    //separation can be done by arbirary number of newline, semicolon, comma, or colon
+    //separation can be done by arbitrary number of newline, semicolon, comma, or colon
     spacer = *(qi::eol | ';' | ',' | ':');
 
     //assignment can be done with = or colon
