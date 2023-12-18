@@ -3,4 +3,11 @@ Top:    126e8019650920e7ed65cdba2f52d68bc7a6424b
 Author: scott snyder <snyder@bnl.gov>
 Date:   2023-12-03 18:57:14 -0500
 
-Don't use -O3 in debug builds!
+Don't override optimization setting in debug builds.
+
+The cmake configuration for this package unconditionally sets the optimization
+flag to -O3.  It does this, however, even for DEBUG builds, where that
+is probably not the desired behavior (it took me by surprise, anyway).
+
+Change to override the optimization to -O3 for RELEASE and RELWITHDEBINFO
+builds, but not for DEBUG.
