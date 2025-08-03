@@ -2,7 +2,7 @@
 # cmake file for building ConformalTracking
 # - based on $MARLIN/example/mymarlin/CMakeLists.txt
 # @author Daniel Hynds CERN-PH-LCD
-CMAKE_MINIMUM_REQUIRED(VERSION 2.6 FATAL_ERROR)
+CMAKE_MINIMUM_REQUIRED(VERSION 3.10 FATAL_ERROR)
 ########################################################
 
 
@@ -15,6 +15,9 @@ SET( ${PROJECT_NAME}_VERSION_MAJOR 1 )
 SET( ${PROJECT_NAME}_VERSION_MINOR 12 )
 SET( ${PROJECT_NAME}_VERSION_PATCH 1 )
 
+cmake_policy(SET CMP0144 NEW)
+cmake_policy(SET CMP0167 NEW)
+cmake_policy(SET CMP0153 NEW)
 if (POLICY CMP0074)
   cmake_policy(SET CMP0074 NEW)
 endif()
@@ -89,7 +92,7 @@ DISPLAY_STD_VARIABLES()
 # Set the source files to clang-format (FIXME: determine this better
 
 # Set the clang-format version required by the CI for correct formatting:
-SET(CLANG_FORMAT_VERSION "11")
+SET(CLANG_FORMAT_VERSION "20")
 
 FILE(GLOB_RECURSE
      CHECK_CXX_SOURCE_FILES
