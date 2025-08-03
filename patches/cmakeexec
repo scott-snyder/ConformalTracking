@@ -1,0 +1,7 @@
+Bottom: 9f1156dec8800629ec5671df9de7673e4d229397
+Top:    9f1156dec8800629ec5671df9de7673e4d229397
+Author: sss <sss@karma>
+Date:   2025-08-03 16:39:52 -0400
+
+Change use of obsolete cmake command exec_program to current
+execute_process.
