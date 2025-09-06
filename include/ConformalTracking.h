@@ -48,19 +48,19 @@ public:
   void fillCollectionIndexVectors();
 
   // Called at the beginning of every run
-  virtual void processRunHeader(LCRunHeader*) { m_runNumber++; }
+  virtual void processRunHeader(lcio::LCRunHeader*) { m_runNumber++; }
 
   // Run over each event - the main algorithm
-  virtual void processEvent(LCEvent* evt);
+  virtual void processEvent(lcio::LCEvent* evt);
 
   // Run at the end of each event
-  virtual void check(LCEvent*){};
+  virtual void check(lcio::LCEvent*){};
 
   // Called at the very end for cleanup, histogram saving, etc.
   virtual void end();
 
   // Call to get collections
-  void getCollection(LCCollection*&, std::string const&, LCEvent*);
+  void getCollection(lcio::LCCollection*&, std::string const&, lcio::LCEvent*);
 
   // Plotting function for displaying cells
   void drawline(SKDCluster const&, SKDCluster const&, int, int style = 1);
