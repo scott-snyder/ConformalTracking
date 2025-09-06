@@ -6,6 +6,8 @@
 #include <sstream>
 #include <stdexcept>
 
+using namespace lcio;
+
 // we put the grammar into the implementation to avoid excessive compilation time
 
 using PPVec     = std::vector<ParameterParser::ParsedParameters>;
