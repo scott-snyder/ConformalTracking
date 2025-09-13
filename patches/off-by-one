@@ -1,0 +1,8 @@
+Bottom: e02c16620671a490328f2275a51e7b76fa1f88b0
+Top:    e02c16620671a490328f2275a51e7b76fa1f88b0
+Author: sss <sss@karma>
+Date:   2025-09-13 10:43:38 -0400
+
+Fix off-by-one error in deleting cluster.
+
+Was resulting in an out-of-bounds cluster access.
