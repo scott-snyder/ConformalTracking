@@ -12,7 +12,7 @@ public:
   ConformalTrackingV2& operator=(const ConformalTrackingV2&) = delete;
 
   // Called at the beginning of every run
-  virtual void processRunHeader(LCRunHeader*) { m_runNumber++; }
+  virtual void processRunHeader(lcio::LCRunHeader*) { m_runNumber++; }
 
   virtual void parseStepParameters();
 
