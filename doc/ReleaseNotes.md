@@ -1,3 +1,16 @@
+# v01-12-01
+
+* 2025-06-02 jmcarcell ([PR#66](https://github.com/iLCSoft/ConformalTracking/pull/66))
+  - Add pre-commit, as mentioned in https://github.com/iLCSoft/ConformalTracking/pull/64#discussion_r2112084151
+
+* 2025-05-28 jmcarcell ([PR#64](https://github.com/iLCSoft/ConformalTracking/pull/64))
+  - Add a key4hep workflow and update linux.yml
+  - Remove the format workflow since the clicdp nightlies don't have clang anymore
+
+* 2025-05-28 jmcarcell ([PR#63](https://github.com/iLCSoft/ConformalTracking/pull/63))
+  - Fix out of bounds erase in ConformalTracking
+  - Throw an exception if removing something out of bounds
+
 # v01-12
 
 * 2023-11-08 Leonhard Reichenbach ([PR#62](https://github.com/ilcsoft/ConformalTracking/pull/62))
