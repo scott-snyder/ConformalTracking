@@ -1,6 +1,13 @@
 Bottom: 0d01ba29af050662f741c69758766b04aaec1662
 Top:    f1f1915417c79f178051af58c4f9a8c4db287174
 Author: sss <sss@karma>
-Date:   2025-09-13 21:24:15 -0400
+Date:   2025-10-30 13:06:45 -0400
 
-cmake dev warnings
+Fix cmake development/deprecation warnings.
+
+Update minimum cmake version to 3.10.
+
+Enable NEW policies for CMP0167, CMP0144, and CMP0153.
+(CHECK 0153 before pushing)
+
+Update to current version of clang-format.  (CHECK version)
