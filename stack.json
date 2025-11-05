@@ -1,9 +1,8 @@
 {
   "version": 5,
-  "prev": "bc5065a3870baf4cb35a3071c8352554a7460927",
-  "head": "82fbb275ffa6e8eed5d8c8030032c6b6dd270e88",
-  "applied": [],
-  "unapplied": [
+  "prev": "53093cae560a5e95812f5bbf6a58192908adbb31",
+  "head": "fab9f07a72deef817f040b567987e8ed417261c7",
+  "applied": [
     "gitignore",
     "warn",
     "clang",
@@ -12,28 +11,29 @@
     "nosystem",
     "using"
   ],
+  "unapplied": [],
   "hidden": [],
   "patches": {
     "clang": {
-      "oid": "30783319f387bfbe5610e30250887705aa0ffd1b"
+      "oid": "f881a32cb29714307483e5a32b2a2862b2b7b5b2"
     },
     "cmakeexec": {
-      "oid": "79eb29724b8ec284b4cae38de8b3cf40333a3c04"
+      "oid": "b4d9822cc00d5cb21de2ab3234031aa6191a1a47"
     },
     "cmakewarn": {
-      "oid": "d96c7c8e8d90a86f2c5d9c591a64eed33d125ebc"
+      "oid": "8e335930a3e8f1b2f4cda48b4efdb46a0aa2b0aa"
     },
     "gitignore": {
-      "oid": "fb9d5a53b753fba966784d400fafa82a510781c1"
+      "oid": "048ad412bcb44b7e4659e15d5b2c92d8fde10184"
     },
     "nosystem": {
-      "oid": "52cd1e2397eed99b168106e0288a1d72240c5aa8"
+      "oid": "4cccc47ed780d839c6598aac8542ed5569616a01"
     },
     "using": {
-      "oid": "7cf24ed3212c75a934b253690ed6419a8c38ef8f"
+      "oid": "fab9f07a72deef817f040b567987e8ed417261c7"
     },
     "warn": {
-      "oid": "8e81096104bfaf901267a256b0075565db2fe944"
+      "oid": "2e5a7b9650397c44f4768246bb830e49856f3112"
     }
   }
 }
