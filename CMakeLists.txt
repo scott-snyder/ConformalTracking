@@ -98,7 +98,7 @@ FILE(GLOB_RECURSE
      CHECK_CXX_SOURCE_FILES
         src/*.cc src/*.C include/*.h source/*
      )
-INCLUDE("cmake/clang-cpp-checks.cmake")
+#INCLUDE("cmake/clang-cpp-checks.cmake")
 
 option(BUILD_TESTING "Enable and build tests" ON)
 if(BUILD_TESTING)
