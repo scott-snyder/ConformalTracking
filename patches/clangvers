@@ -1,0 +1,6 @@
+Bottom: a8bd50282a7202c7444d215af6529011b49ddbdc
+Top:    a8bd50282a7202c7444d215af6529011b49ddbdc
+Author: sss <sss@karma>
+Date:   2026-06-17 13:41:24 -0400
+
+Disable warning about clang version.
